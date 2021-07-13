@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:shiurprototype/screens/player.dart';
+import 'package:shiurprototype/screens/commons/player_buttons.dart';
 
 void main() {
   runApp(const MyApp());
@@ -25,6 +27,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      //home: Player(),
     );
   }
 }
@@ -102,6 +105,7 @@ class _MyHomePageState extends State<MyHomePage> {
               '$_counter',
               style: Theme.of(context).textTheme.headline4,
             ),
+            Player(),
           ],
         ),
       ),
